@@ -98,7 +98,7 @@ ul li {
     list-style: none;
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0.2px;
@@ -185,7 +185,7 @@ section ul li:before {
 	.navbar-default
 	{
 		background-color: black;
-		padding: 5px 0;
+		padding: 0 0;
 		-webkit-transition:padding .3s;
 		-moz-transition:padding .3s;
 		transition:padding .3s;
@@ -512,17 +512,17 @@ figure.effect-bubba:hover p {
 }
 
 .dark-bg-2 {
-		background-color: rgba(255, 255, 255, .5);
-	background-image: url(../images/welcome.jpg);	
+		
+	  background-image:  url(../images/welcome.jpg);	
       background-size: cover;
 }
 .dark-bg-3 {
 
-		background-image: url(../images/tbpl-copy.jpg);	
+	  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/tbpl-copy.jpg);	
       background-size: cover;
 }
 .dark-bg-4 {
-	background-image: url(../images/switzerland-lake.jpg);	
+	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/switzerland-lake.jpg);	
      background-size: cover;
 }
 
@@ -835,7 +835,7 @@ color: #fff;
 	transition: 1s;
 }
 #back-top a:hover {
-	background: #fed136;
+	background: #13ff00;
 }
 /* arrow icon (span tag) */
 #back-top i {
