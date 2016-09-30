@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Keegan Richard 
 
 - this is my portfolio website
