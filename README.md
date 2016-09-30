@@ -8,8 +8,3 @@
 
 
 ![](https://keeganrichard.github.io/images/me-camera.JPG)
-=======
-# readme
-
-[contribute](https://github.com/levindixon/readme)
->>>>>>> origin/master
