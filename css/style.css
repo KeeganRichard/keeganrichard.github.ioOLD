@@ -87,7 +87,51 @@ a, a:hover, a:focus, a:active, a.active {
 		padding: 150px 0;
 	}
 }
+ /*  Photo Gallery  */
+ #photos {
+  opacity: 100;
+}
 
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 780px;
+  text-align: left;
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
 
 ul {
 	padding-left: 0;
@@ -98,7 +142,6 @@ ul li {
     list-style: none;
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 8px;
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0.2px;
@@ -111,7 +154,6 @@ section ul li:before {
 	font-style: normal;
 	display: inline-block;
 	text-decoration: inherit;
-	content: "\f105";
 	padding-right: 7px;
 	color: #23AD21;
 }
@@ -513,7 +555,7 @@ figure.effect-bubba:hover p {
 
 .dark-bg-2 {
 		
-	  background-image:  url(../images/welcome.jpg);	
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/welcome.jpg);	
       background-size: cover;
 }
 .dark-bg-3 {
