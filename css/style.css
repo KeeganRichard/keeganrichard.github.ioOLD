@@ -61,7 +61,7 @@ font-style: normal;
 
 p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 300;
 	line-height: 23px;
 	letter-spacing: 0.2px;
@@ -89,41 +89,34 @@ a, a:hover, a:focus, a:active, a.active {
 }
  /*  Photo Gallery  */
  #photos {
-  opacity: 100;
+  opacity: 50;
 }
 
 #photos img {
   width: 30%;
+  height: 30%;
   float: left;
+  padding: ;
   display: block;
   margin: 2px;
+  border: 2px solid white;
 }
+
+}
+
+
+
 
 ul {
   list-style: none;
   margin: 0px auto;
+  font-size: 10px;
   padding: 10px;
   display: block;
   max-width: 780px;
   text-align: left;
 }
 
-#overlay {
-  background: rgba(0,0,0, .8);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  text-align: center;
-}
-
-#overlay img {
-  margin: 10% auto 0;
-  width: 550px;
-  border-radius: 5px;
-}
 
 #photos {
   width: 100%;
@@ -245,7 +238,7 @@ section ul li:before {
 	.navbar-default.navbar-shrink {
 		background-color: black;
 		border-bottom: 1px solid #828282;
-		padding: 5px 0
+		padding: 0px 0
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
 		background-image: url("pix 42_2.jpg")
@@ -272,7 +265,7 @@ header {
 }
 
 header .intro-text {
-	padding-top: 200px;
+	padding-top: 150px;
 	padding-bottom: 50px;
 }
 
@@ -287,7 +280,7 @@ header .intro-text .intro-lead-in {
 	display: inline-block;
 	background-color: rgba(255, 255, 255, 0.65);
 	margin-bottom: 25px;
-	padding: 4px 20px;
+	padding: 4px 15px;
 	font-family: "Open Sans",sans-serif;
 	font-size: 19px;
 	color: #3E3E3E;
@@ -555,17 +548,37 @@ figure.effect-bubba:hover p {
 
 .dark-bg-2 {
 		
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/welcome.jpg);	
-      background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/welcome.jpg) no-repeat center center fixed;	 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 .dark-bg-3 {
 
-	  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/tbpl-copy.jpg);	
-      background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/tbpl.jpg) no-repeat center center fixed;	 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+
 .dark-bg-4 {
-	 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/switzerland-lake.jpg);	
-     background-size: cover;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/toronto.jpg) no-repeat center center fixed;	 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.dark-bg-5 {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/switzerland-lake.jpg) no-repeat center center fixed;	 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .short-section {
@@ -588,7 +601,94 @@ figure.effect-bubba:hover p {
 	margin: 10px 0 0 0;
 	text-transform: uppercase;
 }
+/*--------------------
+Photo Gallery
+----------------------*/
+.lightbox {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  z-index: 1;
+  overflow: auto;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .75s ease-out;
+  transition: transform .75s ease-out;
+}
 
+.lightbox img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 96%;
+  max-height: 96%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+input[type="checkbox"]:checked + .lightbox {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked ~ .grid { opacity: .125; }
+
+.grid {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  padding: 16px;
+  overflow: auto;
+  text-align: center;
+  -webkit-transition: opacity .75s;
+  transition: opacity .75s;
+}
+
+.grid .grid-item {
+  width: 25%;
+  display: inline-block;
+  padding: 16px;
+  opacity: .75;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.grid .grid-item:hover { opacity: 1; }
+@media screen and (max-width: 1024px) {
+
+.grid .grid-item { width: 50%; }
+}
+@media screen and (max-width: 480px) {
+
+.grid .grid-item { width: 100%; }
+}
+
+.grid img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
 /*--------------------
 4.5. Partners Slider
 --------------------*/
