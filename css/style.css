@@ -54,8 +54,8 @@ h6 {
 }
 
 @font-face {
-font-family: My-Underwood;
-src:url('My-Underwood/MyUnderwood.ttf');
+font-family: 'MyUnderwood';
+src:url('../My-Underwood/MyUnderwood.ttf');
 font-weight: normal;
 font-style: normal;
 }
