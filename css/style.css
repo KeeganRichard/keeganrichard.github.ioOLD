@@ -47,7 +47,7 @@ h4,
 h5,
 h6 {
 
-	font-weight: 300;
+	font-weight: 200;
 	letter-spacing: 0.4px;
 	font-family: "MyUnderwood", Sans-serif;
 	color: white;
@@ -157,6 +157,8 @@ section ul li:before {
 /*--------------------
 1.1 Reset bootstrap
 --------------------*/
+
+
 
 .row-0-gutter {
     margin-left: -13px;
