@@ -103,7 +103,9 @@ a, a:hover, a:focus, a:active, a.active {
   border: 2px solid white;
 }
 
-}
+/* Lightbox */
+
+
 
 
 
@@ -111,7 +113,7 @@ a, a:hover, a:focus, a:active, a.active {
 ul {
   list-style: none;
   margin: 0px auto;
-  font-size: 10px;
+  font-size: 9px;
   padding: 10px;
   display: block;
   max-width: 780px;
@@ -244,7 +246,6 @@ section ul li:before {
 	.navbar-default.navbar-shrink .navbar-brand {
 		background-image: url("pix 42_2.jpg")
 		font-size: 1.5em;
-		margin-top: 10px;
 	}
 }
 
