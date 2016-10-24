@@ -11,11 +11,31 @@
 		<title>Keegan Richard</title>
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- Custom styles for this template -->
 		<link href="css/owl.carousel.css" rel="stylesheet">
 		<link href="css/owl.theme.default.min.css"  rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/lightbox.min.css" rel="stylesheet">
+
+
+
+<script src="js/imagelightbox.js"></script>
+<script>
+    $( function()
+    {
+        $( 'a' ).imageLightbox();
+    });
+</script>
+
+
+
+
+
+
+
 	</head>
 	<body id="page-top">
 		<!-- Navigation -->
@@ -79,17 +99,24 @@
 			<!-- /.container-fluid -->
 		</nav>
 		<!-- Header -->
-		<header>
-			<div class="container">
-				<div class="slider-container">
-					<div class="intro-text">
-						<h1> Demo Reel Coming Soon! </h1>
-						<div class="intro-heading"> </div>
-				
-					</div>
-				</div>
-			</div>
-		</header>
+<section id="about" class="dark-bg">
+
+    <div class="container">
+      <div class="row">
+  
+        
+       	<div class="col-lg-12 text-center">
+ <div class="section-title">
+        <div class="embed-responsive embed-responsive-16by9">
+         <iframe width="350" height="200" src="https://www.youtube.com/embed/p04e9p-UWHg" frameborder="0" allowfullscreen></iframe>
+        </div>
+     
+	   </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 		<section id="about" class="dark-bg-2">
 			<div class="container">
 				<div class="row">
@@ -137,24 +164,37 @@
 <div class="section-title">
 <h4> Traditonal Photography </h4>
 </div>
+
+<script src="https://osvaldas.info/examples/image-lightbox-responsive-touch-friendly/imagelightbox.js"></script>
+ 
+<script>
+    $( function()
+    {
+        $( 'a' ).imageLightbox();
+    });
+</script>
+
+
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/amsterdam-web.jpg" alt="Keegan Richard"> 
+<a class="images/amsterdam-web.jpg"  data-lightbox="images/amsterdam-web.jpg"> <img src="images/amsterdam-web.jpg" src="images/amsterdam-web.jpg" alt="Amsterdam" /> </a>
 </div>
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/toronto-web.jpg" alt="Keegan Richard"> 
+<a class="images/toronto-web.jpg"  data-lightbox="images/toronto-web.jpg"> <img class="images/toronto-web.jpg" src="images/toronto-web.jpg" alt="Toronto Sign" /> </a>
 </div>
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/queen-street-web.jpg" alt="Keegan Richard"> 
+<a class="images/queen-street-web.jpg"  data-lightbox="images/queen-street-web.jpg"> <img class="images/queen-street-web.jpg" src="images/queen-street-web.jpg" alt="Queen Street" /> </a>
 </div>
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/venice-canel-web.jpg" alt="Keegan Richard"> 
+<a class="images/venice-canel-web.jpg"  data-lightbox="images/venice-canel-web.jpg"> <img class="images/venice-canel-web.jpg" src="images/venice-canel-web.jpg" alt="Venice" /> </a>
 </div>
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/women-of-ww2-web.jpg" alt="Keegan Richard"> 
+<a class="images/women-of-ww2-web.jpg"  data-lightbox="images/women-of-ww2-web.jpg"> <img class="images/women-of-ww2-web.jpg" src="images/women-of-ww2-web.jpg" alt="Women of World War 2" /> </a>
 </div>
 <div class="col-12 nopadding">
-<img class="img-responsive" src="images/piccadilly-web.jpg" alt="Keegan Richard"> 
+<a class="images/piccadilly-web.jpg"  data-lightbox="images/piccadilly-web.jpg"> <img class="images/piccadilly-web.jpg" src="images/piccadilly-web.jpg" alt="Piccadilly Circus" /> </a>
 </div>
+
+
 
 
 <div class="col-lg-12 text-center">
@@ -241,6 +281,15 @@
 </div>
 <div class="col-4 nopadding">
 <img class="img-responsive" src="images/white-stripes-web.jpg"  alt="Keegan Richard"> 
+</div>
+<div class="col-4 nopadding">
+<img class="img-responsive" src="images/magazine-book-mockup.jpg" alt="Keegan Richard"> 
+</div>
+<div class="col-4 nopadding">
+<img class="img-responsive" src="images/ood-poster.jpg" alt="Keegan Richard"> 
+</div>
+<div class="col-4 nopadding">
+<img class="img-responsive" src="images/final autistic artistic poster-01.jpg"  alt="Keegan Richard"> 
 </div>
 </div>
 </div>
@@ -346,17 +395,21 @@
 				</div>
 				
 					<div class="col-md-12">
+					<form action="https://formspree.io/keeganrichard89@gmail.com"
+      method="POST">
+
+
 						<form name="sentMessage" id="contactForm" novalidate="">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+										<input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name." name="name">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+										<input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address." name="_replyto">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -373,9 +426,10 @@
 							<div class="row">
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button type="submit" class="btn">Send Message</button>
+									<button type="submit" class="btn" value="Send">Send Message</button>
 								</div>
 							</div>
+						</form>
 						</form>
 					</div>
 				</div>
@@ -387,7 +441,7 @@
 		</p>
 		<footer>
 			<div class="container text-center">
-				<p>© 2016 Keegan Richard </p> <p>
+				<h6>© 2016 Keegan Richard </h6> <p>
 <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkeeganrichard.github.io%2F#file?showsource=yes&doc=https://keeganrichard.github.io/">HTML5 validator</a>
 </p>
 			</div>
@@ -506,5 +560,6 @@
 		<script src="js/jquery.appear.js"></script>
 		<script src="js/SmoothScroll.min.js"></script>
 		<script src="js/mooz.themes.scripts.js"></script>
+		<script src="js/lightbox-plus-jquery.min.js"></script>
 	</body>
 </html>

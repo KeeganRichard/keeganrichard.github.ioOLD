@@ -83,7 +83,13 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
+/* Video Full screen*/
 
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
 
 +function ($) {
   'use strict';
@@ -178,7 +184,12 @@ if (typeof jQuery === 'undefined') {
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
+/* lightbox */
 
+    $( function()
+    {
+        $( 'a' ).imageLightbox();
+    });
 
 +function ($) {
   'use strict';

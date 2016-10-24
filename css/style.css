@@ -105,54 +105,16 @@ a, a:hover, a:focus, a:active, a.active {
 
 /* Lightbox */
 
-
-
-
-
-
-ul {
-  list-style: none;
-  margin: 0px auto;
-  font-size: 9px;
-  padding: 10px;
-  display: block;
-  max-width: 780px;
-  text-align: left;
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
 }
 
 
-#photos {
-  width: 100%;
-}
-
-#photo-gallery {
-  width: 100%;
-}
-
-ul {
-	padding-left: 0;
-	padding-top: 10px;	
-}
-
-ul li {
-    list-style: none;
-    padding-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0.2px;
-    color: #000000;
-}
-
-section ul li:before {
-	font-family: FontAwesome;
-	font-weight: normal;
-	font-style: normal;
-	display: inline-block;
-	text-decoration: inherit;
-	padding-right: 7px;
-	color: #23AD21;
-}
 
 /*--------------------
 1.1 Reset bootstrap
@@ -251,9 +213,40 @@ section ul li:before {
 	}
 }
 
+
+/* Full video */
+
+.video-section .pattern-overlay {
+padding: 110px 0 32px;
+min-height: 496px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Buenard', serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
 /*--------------------
 3. Header
 --------------------*/
+
 
 header {
 	background-color: black;
@@ -546,7 +539,11 @@ figure.effect-bubba:hover p {
 
 .dark-bg {
 
-	background-color: black;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/cool-winter.jpg) no-repeat center center fixed;	 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .dark-bg-2 {
@@ -607,21 +604,6 @@ figure.effect-bubba:hover p {
 /*--------------------
 Photo Gallery
 ----------------------*/
-.lightbox {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  z-index: 1;
-  overflow: auto;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: -webkit-transform .75s ease-out;
-  transition: transform .75s ease-out;
-}
-
 .lightbox img {
   position: fixed;
   top: 50%;
@@ -629,8 +611,8 @@ Photo Gallery
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 96%;
-  max-height: 96%;
+  max-width: 100%;
+  max-height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -639,6 +621,9 @@ input[type="checkbox"]:checked + .lightbox {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+
+
 
 input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 
@@ -692,6 +677,10 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
   max-height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+
+/*  Lightbox effect */
+
+
 /*--------------------
 4.5. Partners Slider
 --------------------*/
